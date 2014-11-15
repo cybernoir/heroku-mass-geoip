@@ -1,0 +1,8 @@
+{% for i in data %}
+<div class="row">
+    <div>{{ i.addr }}</div> 
+    <div class="long">{{ i.country }}, {{ i.city }}</div>
+    <div class="long">{{ i.asn }}</div>
+    <div class="short"><a href="https://who.is/whois-ip/ip-address/{{ i.addr }}" target="blank">whois</a></div>
+</div>
+{% endfor %}
